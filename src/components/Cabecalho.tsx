@@ -1,9 +1,12 @@
 import logo from "../assets/logo-react.png";
 import Menu from "./Menu";
 
+/* Importando o módulo CSS para o componente Cabecalho */
+import estilos from "./Cabecalho.module.css";
+
 export default function Cabecalho() {
   return (
-    <header>
+    <header className={estilos.topoSite}>
       <h1>
         <img src={logo} alt="" /> Olá React! 😎
       </h1>
