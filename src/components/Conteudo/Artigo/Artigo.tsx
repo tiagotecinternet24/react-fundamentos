@@ -1,18 +1,19 @@
+import type { ReactNode } from "react";
 import estilos from "./Artigo.module.css";
 
 type ArtigoProps = {
   titulo: string;
-  texto: string;
   numero: number;
+  children: ReactNode;
 };
 
-export default function Artigo({ titulo, texto, numero }: ArtigoProps) {
+export default function Artigo({ titulo, numero, children }: ArtigoProps) {
   return (
     <article className={estilos.artigo}>
       <h3>
         Artigo {numero}: {titulo}
       </h3>
-      <p>{texto}</p>
+      {children}
     </article>
   );
 }
