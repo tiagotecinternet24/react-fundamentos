@@ -20,9 +20,11 @@ export default function Conteudo() {
         Artigo e passar para ele os dados de cada curso proveniente
         de cursos. */}
 
-        {cursos.map((curso) => {
-          return <Artigo dados={curso} key={curso.id} />;
-        })}
+        <div className={estilos.artigos}>
+          {cursos.map((curso) => (
+            <Artigo dados={curso} key={curso.id} />
+          ))}
+        </div>
       </section>
 
       <DicaDoDia />
