@@ -9,19 +9,17 @@ type ArtigoProps = {
 export default function Artigo({ dados }: ArtigoProps) {
   const { titulo, preco, categoria } = dados;
 
-  const [cor, setCor] = useState("#f9f9f9");
+  const [destaque, setDestaque] = useState(false);
 
   const selecionar = () => {
-    setCor((valor) => {
-      return valor === "#f9f9f9" ? "yellow" : "#f9f9f9";
-    });
+    setDestaque((selecionado) => !selecionado);
   };
 
   return (
     <article
       onClick={selecionar}
+      style={{ backgroundColor: destaque ? "yellow" : "#f9f9f9" }}
       className={estilos.artigo}
-      style={{ backgroundColor: cor }}
     >
       <h3> {titulo} </h3>
       <p>
