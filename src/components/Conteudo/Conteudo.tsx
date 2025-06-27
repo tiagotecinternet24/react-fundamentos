@@ -36,9 +36,17 @@ export default function Conteudo() {
         })}
 
         {categoriaAtiva && (
-          <p>
-            Categoria selecionada: <b>{categoriaAtiva}</b>
-          </p>
+          <>
+            <button
+              onClick={() => setCategoriaAtiva(null)}
+              className="px-2 py-1 rounded bg-red-300"
+            >
+              Limpar
+            </button>
+            <p>
+              Categoria selecionada: <b>{categoriaAtiva}</b>
+            </p>
+          </>
         )}
 
         <ListaCursos />
