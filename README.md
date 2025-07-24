@@ -1,6 +1,6 @@
 # Fundamentos de React
 
-## 11_gerenciamento-de-states
+## 11_gerenciamento-de-states e 12_filtrando-dados
 
 State (ou Estado) é uma funcionalidade especial de um componente que representa informações que podem mudar ao longo do tempo e que, normalmente, afetam o que é exibido na interface.
 
