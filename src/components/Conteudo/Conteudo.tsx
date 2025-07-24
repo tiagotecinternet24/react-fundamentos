@@ -15,7 +15,7 @@ export default function Conteudo() {
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
 
   return (
-    <main className={estilos.conteudo}>
+    <>
       <section
         className={`${estilos.principal} ${estilos.arredondada} ${estilos.sombra}`}
       >
@@ -55,6 +55,6 @@ export default function Conteudo() {
       <DicaDoDia />
 
       <AvisoImportante />
-    </main>
+    </>
   );
 }
