@@ -18,9 +18,10 @@ export default function Conteudo() {
 
         <p>Este é um exemplo de aplicação React.</p>
 
-        {categorias.map((categoria) => {
+        {categorias.map((categoria, index) => {
           return (
             <button
+              key={index}
               onClick={() => setCategoriaAtiva(categoria)}
               className="rounded py-1 px-2 mr-1 my-1 bg-amber-200 hover:bg-green-300"
             >
