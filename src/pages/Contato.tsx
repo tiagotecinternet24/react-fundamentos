@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 export default function Contato() {
+  useEffect(() => {
+    document.title = "Contato | Meu App React";
+  }, []);
   return (
     <section>
       <h2>Fale conosco</h2>
