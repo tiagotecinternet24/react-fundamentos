@@ -6,9 +6,6 @@ import cursos from "../../data/cursos";
 import { useState } from "react";
 
 export default function Conteudo() {
-  /* Definindo o state para categoria ativa/selecionada,
-  podendo ser null (valor padrão, inicial) ou string 
-  (quando uma categoria for selecionada) */
   const [categoriaAtiva, setCategoriaAtiva] = useState<null | string>(null);
 
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
